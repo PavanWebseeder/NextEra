@@ -63,9 +63,9 @@ const Navbar = () => {
                 <ul className="flex flex-col gap-4 text-gray-300">
                     <li className="hover:text-blue-500 cursor-pointer" >Demo</li>
                     <li className="hover:text-blue-500 cursor-pointer" >About</li>
-                    <li className="hover:text-blue-500 cursor-pointer" ><a href="/contact">Contact Us</a></li>
+                    <li className="hover:text-blue-500 cursor-pointer" ><Link to='/contact'>Contact Us</Link></li>
                     <li className="hover:text-blue-500 cursor-pointer" >FAQ</li>
-                    <li className="hover:text-blue-500 cursor-pointer" ><a href="/policy">Privacy Policy</a></li>
+                    <li className="hover:text-blue-500 cursor-pointer" ><Link to="/policy">Privacy Policy</Link></li>
                 </ul>
             </motion.div>
         )}
