@@ -1,6 +1,6 @@
 export default function Button({text,variant='primary',type='button'})
 {
-    const base = 'px-6 py-3 rounded-full font-medium transition'
+    const base = 'rounded-full font-medium transition text-xs px-3 py-1.5 md:text-sm md:px-5 md:py-2.5';
 
     const styles = {
         primary:'bg-blue-600 text-white hover:bg-blue-700',
@@ -8,7 +8,7 @@ export default function Button({text,variant='primary',type='button'})
     };
     
     return(
-        <button type={type} className={`${base} ${styles[variant]}`}>
+        <button type={type} className={`${base} ${styles[variant]} `}>
             {text}
         </button>
     );
