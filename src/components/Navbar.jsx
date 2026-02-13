@@ -17,11 +17,11 @@ const Navbar = () => {
           <h1 className="text-2xl font-bold text-blue-600"><Link to='/'>NextEra</Link></h1>
 
           <ul className="hidden md:flex gap-6 text-gray-300">
-            <li className="hover:text-blue-500 cursor-pointer" onClick={()=>setIsOpen(!isOpen)}>Demo</li>
-            <li className="hover:text-blue-500 cursor-pointer" onClick={()=>setIsOpen(!isOpen)}>About</li>
-            <li className="hover:text-blue-500 cursor-pointer" onClick={()=>setIsOpen(!isOpen)}><Link to="/contact">Contact Us</Link></li>
-            <li className="hover:text-blue-500 cursor-pointer" onClick={()=>setIsOpen(!isOpen)}>FAQ</li>
-            <li className="hover:text-blue-500 cursor-pointer" onClick={()=>setIsOpen(!isOpen)}><Link to="/policy">Privacy Policy</Link></li>
+            <li className="hover:text-blue-500 cursor-pointer" >Demo</li>
+            <li className="hover:text-blue-500 cursor-pointer" >About</li>
+            <li className="hover:text-blue-500 cursor-pointer" ><Link to="/contact">Contact Us</Link></li>
+            <li className="hover:text-blue-500 cursor-pointer" >FAQ</li>
+            <li className="hover:text-blue-500 cursor-pointer" ><Link to="/policy">Privacy Policy</Link></li>
           </ul>
 
           <div className="flex gap-4">
@@ -61,11 +61,11 @@ const Navbar = () => {
             exit={{height:0,opacity:0}}
             className="md:hidden overflow-hidden pt-4">
                 <ul className="flex flex-col gap-4 text-gray-300">
-                    <li onClick={()=> setIsOpen(!isOpen)} className="hover:text-blue-500 cursor-pointer" >Demo</li>
-                    <li onClick={()=> setIsOpen(!isOpen)} className="hover:text-blue-500 cursor-pointer" >About</li>
-                    <li onClick={()=> setIsOpen(!isOpen)} className="hover:text-blue-500 cursor-pointer" ><Link to='/contact'>Contact Us</Link></li>
-                    <li onClick={()=> setIsOpen(!isOpen)} className="hover:text-blue-500 cursor-pointer" >FAQ</li>
-                    <li onClick={()=> setIsOpen(!isOpen)} className="hover:text-blue-500 cursor-pointer" ><Link to="/policy">Privacy Policy</Link></li>
+                    <li onClick={()=> setIsOpen(false)} className="hover:text-blue-500 cursor-pointer" >Demo</li>
+                    <li onClick={()=> setIsOpen(false)} className="hover:text-blue-500 cursor-pointer" >About</li>
+                    <li onClick={()=> setIsOpen(false)} className="hover:text-blue-500 cursor-pointer" ><Link to='/contact'>Contact Us</Link></li>
+                    <li onClick={()=> setIsOpen(false)} className="hover:text-blue-500 cursor-pointer" >FAQ</li>
+                    <li onClick={()=> setIsOpen(false)} className="hover:text-blue-500 cursor-pointer" ><Link to="/policy">Privacy Policy</Link></li>
                 </ul>
             </motion.div>
         )}
