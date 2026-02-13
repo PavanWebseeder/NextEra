@@ -2,6 +2,7 @@ import { useState } from "react";
 import Container from "./ui/Container";
 import Button from "./ui/Button";
 import { motion,AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,14 +14,14 @@ const Navbar = () => {
     }} className="bg-black border-b border-gray-800 sticky top-0 z-50">
       <Container>
         <div className="flex justify-between items-center py-4">
-          <h1 className="text-2xl font-bold text-blue-600"><a href="/">NextEra</a></h1>
+          <h1 className="text-2xl font-bold text-blue-600"><Link to='/'>NextEra</Link></h1>
 
           <ul className="hidden md:flex gap-6 text-gray-300">
             <li className="hover:text-blue-500 cursor-pointer">Demo</li>
             <li className="hover:text-blue-500 cursor-pointer">About</li>
-            <li className="hover:text-blue-500 cursor-pointer"><a href="/contact">Contect Us</a></li>
+            <li className="hover:text-blue-500 cursor-pointer"><Link to="/contact">Contact Us</Link></li>
             <li className="hover:text-blue-500 cursor-pointer">FAQ</li>
-            <li className="hover:text-blue-500 cursor-pointer"><a href="/policy">Privacy Policy</a></li>
+            <li className="hover:text-blue-500 cursor-pointer"><Link to="/policy">Privacy Policy</Link></li>
           </ul>
 
           <div className="flex gap-4">
